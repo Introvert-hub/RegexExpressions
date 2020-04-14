@@ -3,13 +3,12 @@
 #include <regex>
 
 //https://ru.wikipedia.org/wiki/Регулярные_выражения
-
-//std::regex - задает правило регульрного выражения
-//std::cmatch - результирующие выражение
-//std::regex_match(string.c_str(), cmatch_result, regex_regular); //проверяет всю строку на соответствие правила
-//std::regex_search(string.c_str(), cmatch_result, regex_regular); //ищет часть строки, которая соответствует условию
-//std::regex for_regex_search("email");//будет искать ключивое слово и вернет его.
-//std::regex_replace(str.c_str(), regular, "any_replace_string"); //заменяет регулярное выражение, некоторой строкой
+//std::regex - sets a regular expression rule
+//std::cmatch - result expression
+//std::regex_match(string.c_str(), cmatch_result, regex_regular); //checks the entire string for compliance with the rule
+//std::regex_search(string.c_str(), cmatch_result, regex_regular); //searches for the part of the string that matches the condition
+//std::regex for_regex_search("email");//searches for the part of the string that matches the condition
+//std::regex_replace(str.c_str(), regular, "any_replace_string"); //replaces a regular expression with a string
 
 /*
 std::regex regular(
@@ -19,11 +18,11 @@ std::regex regular(
 					)
 
 
-					"(:)" ищет вхождение двоеточия
-					"([.]*" любые символы, любое количество || [.]-люб.символы "*" - неограниченое количество
-					[^\.]+" - исключить все после точки, обязательное наличие знака "."
-					"+" - обязательность выполнения прошлого условия
-					"(\.)" - выбор именно точки.
+					"(:)" searches for the occurrence of a colon
+					"([.]*" any characters, any number || [.]-any character "*" - an unlimited number
+					[^\.]+" - exclude everything after the dot, mandatory sign "."
+					"+" - whether the previous condition must be met
+					"(\.)" - choosing the exact point.
 */
 
 void firstTestRegex()
